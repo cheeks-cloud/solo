@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: o;
+}
+
+body {
+background-color: rgb(43, 43, 99);
+margin: 0;
+}
+
+h1 {
+font-size: 40px;
+font-weight: 700;
+text-align: center;
+}
+
+h2 {
+font-size: 30px;
+font-weight: 600;
+} 
+
+.container {
+max-width: 900px;
+margin: 0 auto;
+padding: 0 30px;
+}
+
+.label {
+display: block;
+font-weight: 600;
+margin-top: 40px;
+}
+
+.input {
+font-size: 20px;
+margin-top: 1em;
+margin-bottom: 1.5em;
+padding: 0.75em 0.5em;
+min-width: 200px;
+border: none;
+border-left: 7px solid black;
+transition: border-left-color 160ms;
+background-color: grey;
+
+}
+
+::placeholder {
+color: black;
+}
+
+.navbar {
+background-color: grey;
+padding: 10px;
+box-shadow: 5px 10px 8px 10px #1a1212;
+}
+
+.nav-brand {
+font-weight: 450;
+text-decoration: none;
+margin-top: 15px;
+margin-bottom: 15px;
+color: initial;
+}
+
+.table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.table thead {
+background-color: grey;
+color: black;
+border: 2px solid black;
+}
+
+.table th {
+padding: 15px;
+font-size: 23px;
+}
+.table td {
+padding: 10px;
+
+
+}
+
+.table tbody {
+font-size: 20px;
+border: 2px solid black;
+}
+.table tbody tr:nth-child(2n) {
+background-color: wheat;
+}
+
