@@ -21,7 +21,7 @@ names.addEventListener("keyup",() => {
     return value[0]; //  index
   }
   function getLastChar(value){
-    return value.length -1;
+    return value.charAt(value.length -1);
   }
   function getLower(value){
     return value.toLowerCase();
