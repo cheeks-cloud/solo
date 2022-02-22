@@ -8,10 +8,10 @@ const answer4 = document.querySelector("#answer4");
 const answer5 = document.querySelector("#answer5");
 const answer6 = document.querySelector("#answer6");
 
-const name = document.querySelector("#your-name");
+const names = document.querySelector("#your-name");
 
-name.addEventListener("keyup",() => {
-  const value = name.value;
+names.addEventListener("keyup",() => {
+  const value = names.value;
 
   answer1.textContent = getNumberOfChars(value);
   answer2.textContent = getFirstChar(value);
@@ -27,22 +27,23 @@ name.addEventListener("keyup",() => {
   }
 
 });
-function getNumberOfChars(name){
-  return name.length;
+
+function getNumberOfChars(names){
+  return names.length;
 }
- function getFirstChar(name) {
-  return name[o]; //  index
+ function getFirstChar(names) {
+  return names[0]; //  index
 }
- function getLastChar(name){
-  return name.CharAt(name.length -1);//used a method CharAt
+ function getLastChar(names){
+  return names.CharAt(names.length -1);//used a method CharAt
 }
-function getLower(name){
-  return name.toLowerCase();
+function getLower(names){
+  return names.toLowerCase();
 }
-function getUpper(name){
-  return name.toUpperCase();
+function getUpper(names){
+  return names.toUpperCase();
 }
-function getCapitalized(name){
-  return name[0].toUpperCase() + name.subString(1).toLowerCase();
+function getCapitalized(names){
+  return names[0].toUpperCase() + names.subString(1).toLowerCase();
 }
 
